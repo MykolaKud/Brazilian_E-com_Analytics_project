@@ -1,5 +1,5 @@
 SELECT 
-  'product_category_name_translation' AS datASet,
+  'product_category_name_translation' AS dataset,
   'Total_rows' AS metric,
   COUNT(*) AS value
 FROM product_category_name_translation
@@ -7,350 +7,350 @@ UNION ALL
 SELECT 
   'product_category_name_translation',
   'NULL-COUNT - product_category_name',
-  sum(product_category_name IS NULL)
+  SUM(product_category_name IS NULL)
 FROM product_category_name_translation  
 UNION ALL 
 SELECT 
   'product_category_name_translation',
   'NULL-COUNT - product_category_name_english',
-  sum(product_category_name_english IS NULL)
+  SUM(product_category_name_english IS NULL)
 FROM product_category_name_translation
 UNION ALL
 SELECT 
-  'olist_sellers_datASet',
+  'olist_sellers_dataset',
   'Total_rows',
   COUNT(*)
-FROM olist_sellers_datASet
+FROM olist_sellers_dataset
 UNION ALL 
 SELECT 
-  'olist_sellers_datASet',
+  'olist_sellers_dataset',
   'NULL-COUNT - seller_id',
-  sum(seller_id IS NULL)
-FROM olist_sellers_datASet
+  SUM(seller_id IS NULL)
+FROM olist_sellers_dataset
 UNION ALL 
 SELECT 
-  'olist_sellers_datASet',
+  'olist_sellers_dataset',
   'NULL-COUNT - seller_city',
-  sum(seller_city IS NULL)
-FROM olist_sellers_datASet
+  SUM(seller_city IS NULL)
+FROM olist_sellers_dataset
 UNION ALL 
 SELECT 
-  'olist_sellers_datASet',
+  'olist_sellers_dataset',
   'NULL-COUNT - seller_state',
-  sum(seller_state IS NULL)
-FROM olist_sellers_datASet
+  SUM(seller_state IS NULL)
+FROM olist_sellers_dataset
 UNION ALL
 SELECT 
-  'olist_customers_datASet',
+  'olist_customers_dataset',
   'Total_rows',
   COUNT(*)
-FROM olist_customers_datASet
+FROM olist_customers_dataset
 UNION ALL
 SELECT 
-  'olist_customers_datASet',
+  'olist_customers_dataset',
   'NULL-COUNT - customer_id',
-  sum(customer_id IS NULL)
-FROM olist_customers_datASet
+  SUM(customer_id IS NULL)
+FROM olist_customers_dataset
 UNION ALL
 SELECT 
-  'olist_customers_datASet',
+  'olist_customers_dataset',
   'NULL-COUNT - customer_unique_id',
-  sum(customer_unique_id IS NULL)
-FROM olist_customers_datASet
+  SUM(customer_unique_id IS NULL)
+FROM olist_customers_dataset
 UNION ALL
 SELECT 
-  'olist_customers_datASet',
+  'olist_customers_dataset',
   'NULL-COUNT - customer_zip_code_prefix',
-  sum(customer_zip_code_prefix IS NULL)
-FROM olist_customers_datASet
+  SUM(customer_zip_code_prefix IS NULL)
+FROM olist_customers_dataset
 UNION ALL
 SELECT 
-  'olist_customers_datASet',
+  'olist_customers_dataset',
   'NULL-COUNT - customer_city',
-  sum(customer_city IS NULL)
-FROM olist_customers_datASet
+  SUM(customer_city IS NULL)
+FROM olist_customers_dataset
 UNION ALL
 SELECT 
-  'olist_customers_datASet',
+  'olist_customers_dataset',
   'NULL-COUNT - customer_state',
-  sum(customer_state IS NULL)
-FROM olist_customers_datASet
+  SUM(customer_state IS NULL)
+FROM olist_customers_dataset
 UNION ALL
 SELECT 
-  'olist_geolocation_datASet',
+  'olist_geolocation_dataset',
   'Total_rows',
   COUNT(*)
-FROM olist_geolocation_datASet
+FROM olist_geolocation_dataset
 UNION ALL
 SELECT 
-  'olist_geolocation_datASet',
+  'olist_geolocation_dataset',
   'NULL-COUNT - geolocation_zip_code_prefix',
-  sum(geolocation_zip_code_prefix IS NULL)
-FROM olist_geolocation_datASet
+  SUM(geolocation_zip_code_prefix IS NULL)
+FROM olist_geolocation_dataset
 UNION ALL
 SELECT 
-  'olist_geolocation_datASet',
+  'olist_geolocation_dataset',
   'NULL-COUNT - geolocation_lat',
-  sum(geolocation_lat IS NULL)
-FROM olist_geolocation_datASet
+  SUM(geolocation_lat IS NULL)
+FROM olist_geolocation_dataset
 UNION ALL
 SELECT 
-  'olist_geolocation_datASet',
+  'olist_geolocation_dataset',
   'NULL-COUNT - geolocation_lng',
-  sum(geolocation_lng IS NULL)
-FROM olist_geolocation_datASet
+  SUM(geolocation_lng IS NULL)
+FROM olist_geolocation_dataset
 UNION ALL
 SELECT 
-  'olist_geolocation_datASet',
+  'olist_geolocation_dataset',
   'NULL-COUNT - geolocation_city',
-  sum(geolocation_city IS NULL)
-FROM olist_geolocation_datASet
+  SUM(geolocation_city IS NULL)
+FROM olist_geolocation_dataset
 UNION ALL
 SELECT 
-  'olist_geolocation_datASet',
+  'olist_geolocation_dataset',
   'NULL-COUNT - geolocation_state',
-  sum(geolocation_state IS NULL)
-FROM olist_geolocation_datASet
+  SUM(geolocation_state IS NULL)
+FROM olist_geolocation_dataset
 UNION ALL
 SELECT 
-  'olist_order_payments_datASet',
+  'olist_order_payments_dataset',
   'Total_rows',
   COUNT(*)
-FROM olist_order_payments_datASet
+FROM olist_order_payments_dataset
 UNION ALL
 SELECT 
-  'olist_order_payments_datASet',
+  'olist_order_payments_dataset',
   'NULL-COUNT - order_id',
-  sum(order_id IS NULL)
-FROM olist_order_payments_datASet
+  SUM(order_id IS NULL)
+FROM olist_order_payments_dataset
 UNION ALL
 SELECT 
-  'olist_order_payments_datASet',
+  'olist_order_payments_dataset',
   'NULL-COUNT - payment_sequential',
-  sum(payment_sequential IS NULL)
-FROM olist_order_payments_datASet
+  SUM(payment_sequential IS NULL)
+FROM olist_order_payments_dataset
 UNION ALL
 SELECT 
-  'olist_order_payments_datASet',
+  'olist_order_payments_dataset',
   'NULL-COUNT - payment_type',
-  sum(payment_type IS NULL)
-FROM olist_order_payments_datASet
+  SUM(payment_type IS NULL)
+FROM olist_order_payments_dataset
 UNION ALL
 SELECT 
-  'olist_order_payments_datASet',
+  'olist_order_payments_dataset',
   'NULL-COUNT - payment_installments',
-  sum(payment_installments IS NULL)
-FROM olist_order_payments_datASet
+  SUM(payment_installments IS NULL)
+FROM olist_order_payments_dataset
 UNION ALL
 SELECT 
-  'olist_order_payments_datASet',
+  'olist_order_payments_dataset',
   'NULL-COUNT - payment_value',
-  sum(payment_value IS NULL)
-FROM olist_order_payments_datASet
+  SUM(payment_value IS NULL)
+FROM olist_order_payments_dataset
 UNION ALL
 SELECT 
-  'olist_order_items_datASet',
+  'olist_order_items_dataset',
   'Total_rows',
   COUNT(*)
-FROM olist_order_items_datASet
+FROM olist_order_items_dataset
 UNION ALL
 SELECT 
-  'olist_order_items_datASet',
+  'olist_order_items_dataset',
   'NULL-COUNT - order_id',
-  sum(order_id IS NULL)
-FROM olist_order_items_datASet
+  SUM(order_id IS NULL)
+FROM olist_order_items_dataset
 UNION ALL
 SELECT 
-  'olist_order_items_datASet',
+  'olist_order_items_dataset',
   'NULL-COUNT - order_item_id',
-  sum(order_item_id IS NULL)
-FROM olist_order_items_datASet
+  SUM(order_item_id IS NULL)
+FROM olist_order_items_dataset
 UNION ALL
 SELECT 
-  'olist_order_items_datASet',
+  'olist_order_items_dataset',
   'NULL-COUNT - product_id',
-  sum(product_id IS NULL)
-FROM olist_order_items_datASet
+  SUM(product_id IS NULL)
+FROM olist_order_items_dataset
 UNION ALL
 SELECT 
-  'olist_order_items_datASet',
+  'olist_order_items_dataset',
   'NULL-COUNT - seller_id',
-  sum(seller_id IS NULL)
-FROM olist_order_items_datASet
+  SUM(seller_id IS NULL)
+FROM olist_order_items_dataset
 UNION ALL
 SELECT 
-  'olist_order_items_datASet',
+  'olist_order_items_dataset',
   'NULL-COUNT - shipping_limit_date',
-  sum(shipping_limit_date IS NULL)
-FROM olist_order_items_datASet
+  SUM(shipping_limit_date IS NULL)
+FROM olist_order_items_dataset
 UNION ALL
 SELECT 
-  'olist_order_items_datASet',
+  'olist_order_items_dataset',
   'NULL-COUNT - price',
-  sum(price IS NULL)
-FROM olist_order_items_datASet
+  SUM(price IS NULL)
+FROM olist_order_items_dataset
 UNION ALL
 SELECT 
-  'olist_order_items_datASet',
+  'olist_order_items_dataset',
   'NULL-COUNT - freight_value',
-  sum(freight_value IS NULL)
-FROM olist_order_items_datASet
+  SUM(freight_value IS NULL)
+FROM olist_order_items_dataset
 UNION ALL
 SELECT 
-  'olist_order_reviews_datASet',
+  'olist_order_reviews_dataset',
   'Total_rows',
   COUNT(*)
-FROM olist_order_reviews_datASet
+FROM olist_order_reviews_dataset
 UNION ALL
 SELECT 
-  'olist_order_reviews_datASet',
+  'olist_order_reviews_dataset',
   'NULL-COUNT - review_id',
-  sum(review_id IS NULL)
-FROM olist_order_reviews_datASet
+  SUM(review_id IS NULL)
+FROM olist_order_reviews_dataset
 UNION ALL
 SELECT 
-  'olist_order_reviews_datASet',
+  'olist_order_reviews_dataset',
   'NULL-COUNT - review_score',
-  sum(review_score IS NULL)
-FROM olist_order_reviews_datASet
+  SUM(review_score IS NULL)
+FROM olist_order_reviews_dataset
 UNION ALL
 SELECT 
-  'olist_order_reviews_datASet',
+  'olist_order_reviews_dataset',
   'NULL-COUNT - review_comment_title',
-  sum(review_comment_title IS NULL)
-FROM olist_order_reviews_datASet
+  SUM(review_comment_title IS NULL)
+FROM olist_order_reviews_dataset
 UNION ALL
 SELECT 
-  'olist_order_reviews_datASet',
+  'olist_order_reviews_dataset',
   'NULL-COUNT - review_comment_message',
-  sum(review_comment_message IS NULL)
-FROM olist_order_reviews_datASet
+  SUM(review_comment_message IS NULL)
+FROM olist_order_reviews_dataset
 UNION ALL
 SELECT 
-  'olist_order_reviews_datASet',
+  'olist_order_reviews_dataset',
   'NULL-COUNT - review_creation_date',
-  sum(review_creation_date IS NULL)
-FROM olist_order_reviews_datASet
+  SUM(review_creation_date IS NULL)
+FROM olist_order_reviews_dataset
 UNION ALL
 SELECT 
-  'olist_order_reviews_datASet',
+  'olist_order_reviews_dataset',
   'NULL-COUNT - review_answer_timestamp',
-  sum(review_answer_timestamp IS NULL)
-FROM olist_order_reviews_datASet
+  SUM(review_answer_timestamp IS NULL)
+FROM olist_order_reviews_dataset
 UNION ALL
 SELECT 
-  'olist_orders_datASet',
+  'olist_orders_dataset',
   'Total_rows',
   COUNT(*)
-FROM olist_orders_datASet
+FROM olist_orders_dataset
 UNION ALL
 SELECT 
-  'olist_orders_datASet',
+  'olist_orders_dataset',
   'NULL-COUNT - order_id',
-  sum(order_id IS NULL)
-FROM olist_orders_datASet
+  SUM(order_id IS NULL)
+FROM olist_orders_dataset
 UNION ALL
 SELECT 
-  'olist_orders_datASet',
+  'olist_orders_dataset',
   'NULL-COUNT - customer_id',
-  sum(customer_id IS NULL)
-FROM olist_orders_datASet
+  SUM(customer_id IS NULL)
+FROM olist_orders_dataset
 UNION ALL
 SELECT 
-  'olist_orders_datASet',
+  'olist_orders_dataset',
   'NULL-COUNT - order_status',
-  sum(order_status IS NULL)
-FROM olist_orders_datASet
+  SUM(order_status IS NULL)
+FROM olist_orders_dataset
 UNION ALL
 SELECT 
-  'olist_orders_datASet',
+  'olist_orders_dataset',
   'NULL-COUNT - order_purchASe_timestamp',
-  sum(order_purchASe_timestamp IS NULL)
-FROM olist_orders_datASet
+  SUM(order_purchase_timestamp IS NULL)
+FROM olist_orders_dataset
 UNION ALL
 SELECT 
-  'olist_orders_datASet',
+  'olist_orders_dataset',
   'NULL-COUNT - order_approved_at',
-  sum(order_approved_at IS NULL)
-FROM olist_orders_datASet
+  SUM(order_approved_at IS NULL)
+FROM olist_orders_dataset
 UNION ALL
 SELECT 
-  'olist_orders_datASet',
+  'olist_orders_dataset',
   'NULL-COUNT - order_delivered_carrier_date',
-  sum(order_delivered_carrier_date IS NULL)
-FROM olist_orders_datASet
+  SUM(order_delivered_carrier_date IS NULL)
+FROM olist_orders_dataset
 UNION ALL
 SELECT 
-  'olist_orders_datASet',
+  'olist_orders_dataset',
   'NULL-COUNT - order_delivered_customer_date',
-  sum(order_delivered_customer_date IS NULL)
-FROM olist_orders_datASet
+  SUM(order_delivered_customer_date IS NULL)
+FROM olist_orders_dataset
 UNION ALL
 SELECT 
-  'olist_orders_datASet',
+  'olist_orders_dataset',
   'NULL-COUNT - order_estimated_delivery_date',
-  sum(order_estimated_delivery_date IS NULL)
-FROM olist_orders_datASet
+  SUM(order_estimated_delivery_date IS NULL)
+FROM olist_orders_dataset
 UNION ALL
 SELECT 
-  'olist_products_datASet',
+  'olist_products_dataset',
   'Total_rows',
   COUNT(*)
-FROM olist_products_datASet
+FROM olist_products_dataset
 UNION ALL
 SELECT 
-  'olist_products_datASet',
+  'olist_products_dataset',
   'NULL-COUNT - product_id',
-  sum(product_id IS NULL)
-FROM olist_products_datASet
+  SUM(product_id IS NULL)
+FROM olist_products_dataset
 UNION ALL
 SELECT 
-  'olist_products_datASet',
+  'olist_products_dataset',
   'NULL-COUNT - product_category_name',
-  sum(product_category_name IS NULL)
-FROM olist_products_datASet
+  SUM(product_category_name IS NULL)
+FROM olist_products_dataset
 UNION ALL
 SELECT 
-  'olist_products_datASet',
+  'olist_products_dataset',
   'NULL-COUNT - product_name_lenght',
-  sum(product_name_lenght IS NULL)
-FROM olist_products_datASet
+  SUM(product_name_lenght IS NULL)
+FROM olist_products_dataset
 UNION ALL
 SELECT 
-  'olist_products_datASet',
+  'olist_products_dataset',
   'NULL-COUNT - product_description_lenght',
-  sum(product_description_lenght IS NULL)
-FROM olist_products_datASet
+  SUM(product_description_lenght IS NULL)
+FROM olist_products_dataset
 UNION ALL
 SELECT 
-  'olist_products_datASet',
+  'olist_products_dataset',
   'NULL-COUNT - product_photos_qty',
-  sum(product_photos_qty IS NULL)
-FROM olist_products_datASet
+  SUM(product_photos_qty IS NULL)
+FROM olist_products_dataset
 UNION ALL
 SELECT 
-  'olist_products_datASet',
+  'olist_products_dataset',
   'NULL-COUNT - product_weight_g',
-  sum(product_weight_g IS NULL)
-FROM olist_products_datASet
+  SUM(product_weight_g IS NULL)
+FROM olist_products_dataset
 UNION ALL
 SELECT 
-  'olist_products_datASet',
+  'olist_products_dataset',
   'NULL-COUNT - product_length_cm',
-  sum(product_length_cm IS NULL)
-FROM olist_products_datASet
+  SUM(product_length_cm IS NULL)
+FROM olist_products_dataset
 UNION ALL
 SELECT 
-  'olist_products_datASet',
+  'olist_products_dataset',
   'NULL-COUNT - product_height_cm',
-  sum(product_height_cm IS NULL)
-FROM olist_products_datASet
+  SUM(product_height_cm IS NULL)
+FROM olist_products_dataset
 UNION ALL
 SELECT 
-  'olist_products_datASet',
+  'olist_products_dataset',
   'NULL-COUNT - product_width_cm',
-  sum(product_width_cm IS NULL)
-FROM olist_products_datASet
+  SUM(product_width_cm IS NULL)
+FROM olist_products_dataset
 
 
 #2 product_id's don't have entered dimensions and 610 prodict_id's don't have name, description and product photos
