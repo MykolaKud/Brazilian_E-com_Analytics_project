@@ -33,6 +33,7 @@ Feel free to contribute by adding more analyses, or optimizing queries.
 ## Data exploration
 
 Initially, we check the dataset for missing (NULL) values. This is done using the following SQL query:
+
 https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/9101b7ad5656760146955be6b906459bf2e9aa1d/Preparing_dataset_for%20analysis/Checking%20for%20null-values.sql
 
 *Results:*
