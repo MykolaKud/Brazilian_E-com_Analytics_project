@@ -218,8 +218,56 @@ We then analyze why `review_id` is duplicated. The results indicate that the sam
 
 [Checking review_id for duplicates reason.sql](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/3927b8e62abab4786a08f1ce5c3f79890d1c350a/Preparing_dataset_for%20analysis/Checking%20review_id%20for%20duplicates%20reason.sql)
 
+
+
 *Conclusion*
 - A single order can have multiple payments.
 - A single review can be linked to multiple orders.
 - These findings will be considered in further data analysis.
+
+So, we can move on in the analysis of the datasets.
+
+# 1. Top States and Cities by Unique Buyers
+
+## Analysis
+We determine the **top 7 states** and **top 10 cities** with the highest number of unique buyers, along with their percentage of the total customer base.
+
+[Top-7 States and Top-10 cities query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/d30bc48c3afa77ab90997d03c6b16f1550930dee/Analysis/1.%20Num_of_customers.sql)
+
+*Results:*
+States:
+|state|num_of_unique_customers|percent_from_total|
+|-----|-----------------------|------------------|
+|SP|41746|41.98|
+|RJ|12852|12.92|
+|MG|11635|11.70|
+|RS|5466|5.50|
+|PR|5045|5.07|
+|SC|3637|3.66|
+|BA|3380|3.40|
+
+Cities:
+|city|num_of_unique_customers|percent_from_total|
+|----|-----------------------|------------------|
+|sao paulo|15540|15.63|
+|rio de janeiro|6882|6.92|
+|belo horizonte|2773|2.79|
+|brasilia|2131|2.14|
+|curitiba|1521|1.53|
+|campinas|1444|1.45|
+|porto alegre|1379|1.39|
+|salvador|1245|1.25|
+|guarulhos|1189|1.20|
+|sao bernardo do campo|938|0.94|
+
+
+### Key Findings
+- **States**: SP and RJ have the highest number of unique buyers, collectively accounting for more than half of all purchases.
+- **Cities**: São Paulo, Rio de Janeiro, Belo Horizonte, and the capital Brasília together represent over **25%** of all unique buyers.
+
+*Conclusion & Recommendations*
+1. **Marketing Focus**: Given their high customer density, SP and RJ should be prioritized for targeted advertising and promotions.
+2. **Strategic Planning**: Major cities such as São Paulo and Rio de Janeiro should be key areas for regional expansion efforts.
+3. **Supply Chain Optimization**: Ensuring efficient logistics and stock availability in these top locations can improve delivery times and customer satisfaction.
+
 
