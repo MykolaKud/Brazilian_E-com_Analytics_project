@@ -104,3 +104,37 @@ The query results indicate:
 - **2 product_id** entries are missing product dimensions.
 - **610 product_id** entries are missing product name, description, and photos.
 
+# Duplicate Values Analysis
+
+## Checking for Duplicates
+Next, we check for duplicate values in key columns across multiple datasets:
+
+- **olist_customers_dataset**: `customer_id`, `customer_unique_id`
+- **olist_orders_dataset**: `order_id`
+- **product_category_name_translation**: `product_category_name`, `product_category_name_english`
+- **olist_sellers_dataset**: `seller_id`
+- **olist_order_payments_dataset**: `order_id`
+- **olist_order_reviews_dataset**: `review_id`
+- **olist_products_dataset**: `product_id`
+
+This helps us understand the structure of the data and ensure its correct usage in further analysis.
+
+*Results*
+
+Preparing_dataset_for analysis/Checking for duplicates.sql
+
+The analysis revealed duplicates in two columns.
+
+### Investigating Duplicate `order_id` in `olist_order_payments_dataset`
+Since `order_id` is unique in the orders dataset, we can assume that a single order may have multiple payments. To verify this, we extract all duplicate values.
+
+After selecting a few examples, we confirm that multiple payments can be linked to the same `order_id`, validating our assumption.
+
+### Investigating Duplicate `review_id` in `olist_order_reviews_dataset`
+We then analyze why `review_id` is duplicated. The results indicate that the same `review_id` can be associated with different `order_id` values.
+
+*Conclusion*
+- A single order can have multiple payments.
+- A single review can be linked to multiple orders.
+- These findings will be considered in further data analysis.
+
