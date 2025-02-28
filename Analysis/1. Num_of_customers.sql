@@ -5,7 +5,7 @@ SELECT
 FROM olist_customers_dataset
 GROUP BY state
 ORDER BY num_of_unique_customers desc
-LIMIT 7;
+LIMIT 7
 
 SELECT 
   customer_city AS city, 
