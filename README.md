@@ -313,4 +313,29 @@ product_category|sum_of_orders|percent_from_total|
 2. **Sales Optimization**: Even a small increase in sales within these high-performing categories can lead to significant profit gains.
 3. **Targeted Promotions**: Special promotions, discounts, or bundling strategies can further boost sales in these segments.
 
+# Top Order Months Analysis
+
+## Analysis
+We determine the **month with the highest number of orders** for each year, excluding orders with a "canceled" status.
+
+[Highest month each year SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/61ed94dc78b66a49c1b68101700fb6d2cab2a92c/Analysis/3.%20Highest_month_each_year.sql)
+
+## Results:
+
+|order_month|order_year|num_of_orders|
+|-----------|----------|-------------|
+|10|2016|300|
+|11|2017|7507|
+|1|2018|7235|
+
+### Key Findings
+- **2016:** October had the highest number of orders.
+- **2017:** November saw the peak order volume.
+- **2018:** January recorded the most orders.
+
+## Conclusion & Recommendations
+1. **Promotional Strategies**: These peak months can be leveraged for targeted promotional campaigns and marketing efforts.
+2. **Data Limitations**: The dataset covers a limited period, making it difficult to establish long-term sales trends.
+3. **Visualization**: Future analysis should include visual representations to better understand sales dynamics over time.
+
 
