@@ -35,7 +35,7 @@ Feel free to contribute by adding more analyses, or optimizing queries.
 Initially, we check the dataset for missing (NULL) values. This is done using the following SQL query:
 https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/9101b7ad5656760146955be6b906459bf2e9aa1d/Preparing_dataset_for%20analysis/Checking%20for%20null-values.sql
 
-**Results:**
+*Results:*
 |dataset|metric|value|
 |-------|------|-----|
 |product_category_name_translation|Total_rows|71|
@@ -98,7 +98,7 @@ https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/9101b7ad5656
 |olist_products_dataset|NULL-count - product_height_cm|2|
 |olist_products_dataset|NULL-count - product_width_cm|2|
 
-## Conclusion:
+*Conclusion:*
 The query results indicate:
 - **2 product_id** entries are missing product dimensions.
 - **610 product_id** entries are missing product name, description, and photos.
