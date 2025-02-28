@@ -34,7 +34,6 @@ Feel free to contribute by adding more analyses, or optimizing queries.
 Initially, we check the dataset for missing (NULL) values. This is done using the following SQL query:
 https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/9101b7ad5656760146955be6b906459bf2e9aa1d/Preparing_dataset_for%20analysis/Checking%20for%20null-values.sql
 
-[_select_product_category_name_translation_as_dataset_Total_rows__202502281028.md](https://github.com/user-attachments/files/19024611/_select_product_category_name_translation_as_dataset_Total_rows__202502281028.md)
 |dataset|metric|value|
 |-------|------|-----|
 |product_category_name_translation|Total_rows|71|
