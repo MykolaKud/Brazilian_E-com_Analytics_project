@@ -36,7 +36,7 @@ Initially, we check the dataset for missing (NULL) values. This is done using th
 
 https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/9101b7ad5656760146955be6b906459bf2e9aa1d/Preparing_dataset_for%20analysis/Checking%20for%20null-values.sql
 
-*Results:*
+## Results:
 |dataset|metric|value|
 |-------|------|-----|
 |product_category_name_translation|Total_rows|71|
@@ -99,7 +99,7 @@ https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/9101b7ad5656
 |olist_products_dataset|NULL-count - product_height_cm|2|
 |olist_products_dataset|NULL-count - product_width_cm|2|
 
-*Conclusion:*
+## Conclusion:
 The query results indicate:
 - **2 product_id** entries are missing product dimensions.
 - **610 product_id** entries are missing product name, description, and photos.
@@ -120,7 +120,7 @@ Next, we check for duplicate values in key columns across multiple datasets:
 This helps us understand the structure of the data and ensure its correct usage in further analysis.
 [Checking for duplicates](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/84e00dee0544d8e9a1adabc109938b3ca25ed3e2/Preparing_dataset_for%20analysis/Checking%20for%20duplicates.sql)
 
-*Results*
+## Results
 |dataset|metric|value|
 |-------|------|-----|
 |product_category_name_translation|Total_rows|71|
@@ -190,7 +190,7 @@ Since `order_id` is unique in the orders dataset, we can assume that a single or
 
 [Checking order_id for duplicates reason](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/3927b8e62abab4786a08f1ce5c3f79890d1c350a/Preparing_dataset_for%20analysis/Checking%20order_id%20for%20duplicates%20reason.sql)
 
-*Result*
+## Result
 |order_id|
 |--------|
 |5cfd514482e22bc992e7693f0e3e8df7|
@@ -220,7 +220,7 @@ We then analyze why `review_id` is duplicated. The results indicate that the sam
 
 
 
-*Conclusion*
+## Conclusion
 - A single order can have multiple payments.
 - A single review can be linked to multiple orders.
 - These findings will be considered in further data analysis.
@@ -234,7 +234,8 @@ We determine the **top 7 states** and **top 10 cities** with the highest number 
 
 [Top-7 States and Top-10 cities query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/d30bc48c3afa77ab90997d03c6b16f1550930dee/Analysis/1.%20Num_of_customers.sql)
 
-*Results:*
+## Results:
+
 States:
 |state|num_of_unique_customers|percent_from_total|
 |-----|-----------------------|------------------|
@@ -265,9 +266,51 @@ Cities:
 - **States**: SP and RJ have the highest number of unique buyers, collectively accounting for more than half of all purchases.
 - **Cities**: São Paulo, Rio de Janeiro, Belo Horizonte, and the capital Brasília together represent over **25%** of all unique buyers.
 
-*Conclusion & Recommendations*
+## Conclusion & Recommendations
 1. **Marketing Focus**: Given their high customer density, SP and RJ should be prioritized for targeted advertising and promotions.
 2. **Strategic Planning**: Major cities such as São Paulo and Rio de Janeiro should be key areas for regional expansion efforts.
 3. **Supply Chain Optimization**: Ensuring efficient logistics and stock availability in these top locations can improve delivery times and customer satisfaction.
+
+# 2. Order Distribution by Category
+
+## Analysis
+We analyze how orders are distributed across product categories, including the **percentage of total orders** and **English category names**.
+
+[Sum per category query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/a7909eb368400417bd9abbea529d1a73aef1ab8d/Analysis/2.%20Sum_per_category.sql)
+
+## Results:
+
+product_category|sum_of_orders|percent_from_total|
+|----------------|-------------|------------------|
+|bed_bath_table|11115|11.18|
+|health_beauty|9670|9.72|
+|sports_leisure|8641|8.69|
+|furniture_decor|8334|8.38|
+|computers_accessories|7827|7.87|
+|housewares|6964|7.00|
+|watches_gifts|5991|6.02|
+|telephony|4545|4.57|
+|garden_tools|4347|4.37|
+|auto|4235|4.26|
+|toys|4117|4.14|
+|cool_stuff|3796|3.82|
+|perfumery|3419|3.44|
+|baby|3065|3.08|
+|electronics|2767|2.78|
+|stationery|2517|2.53|
+|fashion_bags_accessories|2031|2.04|
+|pet_shop|1947|1.96|
+|office_furniture|1691|1.70|
+|consoles_games|1137|1.14|
+|luggage_accessories|1092|1.10|
+
+### Key Findings
+- The top categories **bed_bath_table, health_beauty, and sports_leisure** make up nearly **30%** of all orders.
+- The **top 7 categories** collectively account for over **50%** of total orders.
+
+## Conclusion & Recommendations
+1. **Revenue Focus**: These key categories should be prioritized when planning future revenue growth strategies.
+2. **Sales Optimization**: Even a small increase in sales within these high-performing categories can lead to significant profit gains.
+3. **Targeted Promotions**: Special promotions, discounts, or bundling strategies can further boost sales in these segments.
 
 
