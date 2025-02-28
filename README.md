@@ -313,7 +313,7 @@ product_category|sum_of_orders|percent_from_total|
 2. **Sales Optimization**: Even a small increase in sales within these high-performing categories can lead to significant profit gains.
 3. **Targeted Promotions**: Special promotions, discounts, or bundling strategies can further boost sales in these segments.
 
-# Top Order Months Analysis
+# 3. Top Order Months Analysis
 
 ## Analysis
 We determine the **month with the highest number of orders** for each year, excluding orders with a "canceled" status.
