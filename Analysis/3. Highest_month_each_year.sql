@@ -1,5 +1,3 @@
-# Let's check which month had the highest number of orders each year except canceled orders?
-  
 WITH orders_grouped_by_month AS (
   SELECT 
     MONTH(order_purchase_timestamp) AS order_month,
