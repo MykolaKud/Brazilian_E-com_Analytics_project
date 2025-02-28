@@ -1,5 +1,3 @@
-#Let's check top 7 states and top 10 cities have the highest number of unique customers with % from total amount
-  
 SELECT
   customer_state AS state,
   COUNT(*) AS num_of_unique_customers,
