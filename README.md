@@ -34,7 +34,7 @@ Feel free to contribute by adding more analyses, or optimizing queries.
 
 Initially, we check the dataset for missing (NULL) values. This is done using the following SQL query:
 
-https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/9101b7ad5656760146955be6b906459bf2e9aa1d/Preparing_dataset_for%20analysis/Checking%20for%20null-values.sql
+[Checking for null-values SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/9101b7ad5656760146955be6b906459bf2e9aa1d/Preparing_dataset_for%20analysis/Checking%20for%20null-values.sql)
 
 ## Results:
 |dataset|metric|value|
@@ -118,7 +118,7 @@ Next, we check for duplicate values in key columns across multiple datasets:
 - **olist_products_dataset**: `product_id`
 
 This helps us understand the structure of the data and ensure its correct usage in further analysis.
-[Checking for duplicates](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/84e00dee0544d8e9a1adabc109938b3ca25ed3e2/Preparing_dataset_for%20analysis/Checking%20for%20duplicates.sql)
+[Checking for duplicates SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/84e00dee0544d8e9a1adabc109938b3ca25ed3e2/Preparing_dataset_for%20analysis/Checking%20for%20duplicates.sql)
 
 ## Results
 |dataset|metric|value|
@@ -188,7 +188,7 @@ The analysis revealed duplicates in two columns.
 ### Investigating Duplicate `order_id` in `olist_order_payments_dataset`
 Since `order_id` is unique in the orders dataset, we can assume that a single order may have multiple payments. To verify this, we extract all duplicate values and check some of them.
 
-[Checking order_id for duplicates reason](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/3927b8e62abab4786a08f1ce5c3f79890d1c350a/Preparing_dataset_for%20analysis/Checking%20order_id%20for%20duplicates%20reason.sql)
+[Checking order_id for duplicates reason SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/3927b8e62abab4786a08f1ce5c3f79890d1c350a/Preparing_dataset_for%20analysis/Checking%20order_id%20for%20duplicates%20reason.sql)
 
 ## Result
 |order_id|
@@ -232,7 +232,7 @@ So, we can move on in the analysis of the datasets.
 ## Analysis
 We determine the **top 7 states** and **top 10 cities** with the highest number of unique buyers, along with their percentage of the total customer base.
 
-[Top-7 States and Top-10 cities query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/d30bc48c3afa77ab90997d03c6b16f1550930dee/Analysis/1.%20Num_of_customers.sql)
+[Top-7 States and Top-10 cities SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/d30bc48c3afa77ab90997d03c6b16f1550930dee/Analysis/1.%20Num_of_customers.sql)
 
 ## Results:
 
@@ -276,7 +276,7 @@ Cities:
 ## Analysis
 We analyze how orders are distributed across product categories, including the **percentage of total orders** and **English category names**.
 
-[Sum per category query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/a7909eb368400417bd9abbea529d1a73aef1ab8d/Analysis/2.%20Sum_per_category.sql)
+[Sum per category SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/a7909eb368400417bd9abbea529d1a73aef1ab8d/Analysis/2.%20Sum_per_category.sql)
 
 ## Results:
 
