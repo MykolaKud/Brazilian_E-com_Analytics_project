@@ -1,4 +1,4 @@
-#What is the most common payment method among customers?
+#The most common payment method among customers
    
 SELECT
    oopd.payment_type,
