@@ -397,5 +397,52 @@ We identify the **top 7 product categories** contributing the most to total sale
 2. **Sales Promotions**: Implementing targeted marketing campaigns and promotions can further boost sales.
 3. **Inventory Management**: Ensuring adequate stock levels for these high-demand categories can improve order fulfillment and customer satisfaction.
 
+# 6. Average Order Value (AOV) by State
+
+## Analysis
+We calculate the **average order value (AOV)** across different states in Brazil to understand regional purchasing behaviors.
+
+[Average_order_value](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/7ca9e301cdfddf328caacdefbdcb012a3b124fc3/Analysis/6.%20Average_order_value.sql)
+
+## Results:
+|customer_state|average_order_value|
+|--------------|-------------------|
+|AC|234.29|
+|AL|227.08|
+|AM|181.6|
+|AP|232.33|
+|BA|170.82|
+|CE|199.9|
+|DF|161.13|
+|ES|154.71|
+|GO|165.76|
+|MA|198.86|
+|MG|154.71|
+|MS|186.87|
+|MT|195.23|
+|PA|215.92|
+|PB|248.33|
+|PE|187.99|
+|PI|207.11|
+|PR|154.15|
+|RJ|158.53|
+|RN|196.78|
+|RO|233.2|
+|RR|218.8|
+|RS|157.18|
+|SC|165.98|
+|SE|208.44|
+|SP|137.5|
+|TO|204.27|
+
+### Key Findings
+- The **average order value varies significantly** across states.
+- The **top 3 states by number of buyers**—São Paulo (SP), Rio de Janeiro (RJ), and Minas Gerais (MG)—account for over **60% of total orders**.
+- These states have a **relatively low AOV**, which heavily influences the overall company average.
+
+## Conclusion & Recommendations
+1. **AOV Growth Strategy**: Targeting SP, RJ, and MG with premium product offerings or upselling strategies could help increase the average order value.
+2. **Personalized Marketing**: Region-specific promotions or bundled deals might encourage higher spending per order.
+
 
 
