@@ -338,4 +338,64 @@ We determine the **month with the highest number of orders** for each year, excl
 2. **Data Limitations**: The dataset covers a limited period, making it difficult to establish long-term sales trends.
 3. **Visualization**: Future analysis should include visual representations to better understand sales dynamics over time.
 
+# 4. Sales Volume Analysis
+
+## Analysis
+We calculate the **total revenue, number of orders, and average order value** for the three analyzed years, excluding orders with a "canceled" status.
+
+[Total revenue, order count, average value SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/1b547a1d3802195faec89e6afd7f3e2214a2b560/Analysis/4.%20Total_revenue.sql)
+
+## Results:
+|reporting_year|annual_revenue|total_orders_per_year|average_order_value|
+|--------------|--------------|---------------------|-------------------|
+|2016|54071.35|320|168.97|
+|2017|7186913.77|47235|152.15|
+|2018|8624631.4|55667|154.93|
+
+### Key Findings
+- The dataset contains incomplete data for **2016**, so only **2017 and 2018** are considered.
+- **2018 showed a positive growth trend** in total revenue compared to 2017.
+- The **number of orders also increased** in 2018.
+- The **average order value remained relatively stable** between the two years.
+
+## Conclusion & Recommendations
+1. **Growth Opportunity**: The increase in revenue and order volume suggests a healthy market expansion.
+2. **Strategic Planning**: Future forecasting models should focus on identifying factors driving this growth.
+3. **Data Completeness**: Consider collecting a more comprehensive dataset to improve long-term sales trend analysis.
+
+# 5. Top Revenue-Generating Product Categories
+
+## Analysis
+We identify the **top 7 product categories** contributing the most to total sales revenue.
+
+[Top-7 categories](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/cf5539bb4d243dede52facd03ffebeaf298ee2f8/Analysis/5.%20Top_7_categories_revenue.sql)
+
+## Results:
+|product_category_name|revenue|percent_from_total|
+|---------------------|-------|------------------|
+|cama_mesa_banho|1711258.08|10.69|
+|beleza_saude|1653730.45|10.33|
+|informatica_acessorios|1571543.81|9.82|
+|moveis_decoracao|1424782.52|8.9|
+|relogios_presentes|1421715.28|8.88|
+|esporte_lazer|1381363.23|8.63|
+|utilidades_domesticas|1086565.32|6.79|
+
+### Key Findings
+- The **top 7 categories** are:
+  - `cama_mesa_banho`
+  - `beleza_saude`
+  - `informatica_acessorios`
+  - `moveis_decoracao`
+  - `relogios_presentes`
+  - `esporte_lazer`
+  - `utilidades_domesticas`
+- These categories collectively account for approximately **60%** of total sales revenue.
+
+## Conclusion & Recommendations
+1. **Assortment Expansion**: Increasing the variety of products in these categories could drive further revenue growth.
+2. **Sales Promotions**: Implementing targeted marketing campaigns and promotions can further boost sales.
+3. **Inventory Management**: Ensuring adequate stock levels for these high-demand categories can improve order fulfillment and customer satisfaction.
+
+
 
