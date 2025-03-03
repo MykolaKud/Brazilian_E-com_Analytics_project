@@ -1,5 +1,3 @@
-# What is the distribution of order values (low, medium, high)?
-
 SELECT
   revenue_rank,
   COUNT(order_id) AS order_count,
