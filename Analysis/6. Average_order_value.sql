@@ -1,5 +1,3 @@
-# What is the average order value (AOV) across different states in Brazil?
-
 SELECT
   ocd.customer_state,
   ROUND(AVG(oopd.payment_value), 2) AS average_order_value
