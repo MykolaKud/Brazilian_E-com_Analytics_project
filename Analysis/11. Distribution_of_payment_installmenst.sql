@@ -1,5 +1,3 @@
-# What is the distribution of installment payments? 
-  
 SELECT 
   payment_installments,
   COUNT(*) AS num_of_payments
