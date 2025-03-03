@@ -32,7 +32,7 @@ Feel free to contribute by adding more analyses, or optimizing queries.
 
 ## Data exploration
 
-Initially, we check the dataset for missing (NULL) values. This is done using the following SQL query:
+Initially, Let's check the dataset for missing (NULL) values. This is done using the following SQL query:
 
 [Checking for null-values SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/9101b7ad5656760146955be6b906459bf2e9aa1d/Preparing_dataset_for%20analysis/Checking%20for%20null-values.sql)
 
@@ -186,7 +186,7 @@ This helps us understand the structure of the data and ensure its correct usage 
 The analysis revealed duplicates in two columns.
 
 ### Investigating Duplicate `order_id` in `olist_order_payments_dataset`
-Since `order_id` is unique in the orders dataset, we can assume that a single order may have multiple payments. To verify this, we extract all duplicate values and check some of them.
+Since `order_id` is unique in the orders dataset, we can assume that a single order may have multiple payments. To verify this, let's extract all duplicate values and check some of them.
 
 [Checking order_id for duplicates reason SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/3927b8e62abab4786a08f1ce5c3f79890d1c350a/Preparing_dataset_for%20analysis/Checking%20order_id%20for%20duplicates%20reason.sql)
 
@@ -214,7 +214,7 @@ Since `order_id` is unique in the orders dataset, we can assume that a single or
 After selecting a few examples, we confirm that multiple payments can be linked to the same `order_id`, validating our assumption.
 
 ### Investigating Duplicate `review_id` in `olist_order_reviews_dataset`
-We then analyze why `review_id` is duplicated. The results indicate that the same `review_id` can be associated with different `order_id` values.
+Then analyze why `review_id` is duplicated. The results indicate that the same `review_id` can be associated with different `order_id` values.
 
 [Checking review_id for duplicates reason.sql](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/3927b8e62abab4786a08f1ce5c3f79890d1c350a/Preparing_dataset_for%20analysis/Checking%20review_id%20for%20duplicates%20reason.sql)
 
@@ -230,9 +230,10 @@ So, we can move on in the analysis of the datasets.
 # 1. Top States and Cities by Unique Buyers
 
 ## Analysis
-We determine the **top 7 states** and **top 10 cities** with the highest number of unique buyers, along with their percentage of the total customer base.
+Let's determine the **top 7 states** and **top 10 cities** with the highest number of unique buyers, along with their percentage of the total customer base.
 
-[Top-7 States and Top-10 cities SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/d30bc48c3afa77ab90997d03c6b16f1550930dee/Analysis/1.%20Num_of_customers.sql)
+This is done using the following SQL query:
+[Top-7 States and Top-10 cities](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/d30bc48c3afa77ab90997d03c6b16f1550930dee/Analysis/1.%20Num_of_customers.sql)
 
 ## Results:
 
@@ -274,13 +275,14 @@ Cities:
 # 2. Order Distribution by Category
 
 ## Analysis
-We analyze how orders are distributed across product categories, including the **percentage of total orders** and **English category names**.
+Let's analyze how orders are distributed across product categories, including the **percentage of total orders** and **English category names**.
 
-[Sum per category SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/a7909eb368400417bd9abbea529d1a73aef1ab8d/Analysis/2.%20Sum_per_category.sql)
+This is done using the following SQL query:
+[Sum per category](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/a7909eb368400417bd9abbea529d1a73aef1ab8d/Analysis/2.%20Sum_per_category.sql)
 
 ## Results:
 
-product_category|sum_of_orders|percent_from_total|
+|product_category|sum_of_orders|percent_from_total|
 |----------------|-------------|------------------|
 |bed_bath_table|11115|11.18|
 |health_beauty|9670|9.72|
@@ -316,9 +318,10 @@ product_category|sum_of_orders|percent_from_total|
 # 3. Top Order Months Analysis
 
 ## Analysis
-We determine the **month with the highest number of orders** for each year, excluding orders with a "canceled" status.
+Let's determine the **month with the highest number of orders** for each year, excluding orders with a "canceled" status.
 
-[Highest month each year SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/61ed94dc78b66a49c1b68101700fb6d2cab2a92c/Analysis/3.%20Highest_month_each_year.sql)
+This is done using the following SQL query:
+[Highest month each year](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/61ed94dc78b66a49c1b68101700fb6d2cab2a92c/Analysis/3.%20Highest_month_each_year.sql)
 
 ## Results:
 
@@ -341,9 +344,10 @@ We determine the **month with the highest number of orders** for each year, excl
 # 4. Sales Volume Analysis
 
 ## Analysis
-We calculate the **total revenue, number of orders, and average order value** for the three analyzed years, excluding orders with a "canceled" status.
+Let's calculate the **total revenue, number of orders, and average order value** for the three analyzed years, excluding orders with a "canceled" status.
 
-[Total revenue, order count, average value SQL query](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/1b547a1d3802195faec89e6afd7f3e2214a2b560/Analysis/4.%20Total_revenue.sql)
+This is done using the following SQL query:
+[Total revenue, order count, average value](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/1b547a1d3802195faec89e6afd7f3e2214a2b560/Analysis/4.%20Total_revenue.sql)
 
 ## Results:
 |reporting_year|annual_revenue|total_orders_per_year|average_order_value|
@@ -366,8 +370,9 @@ We calculate the **total revenue, number of orders, and average order value** fo
 # 5. Top Revenue-Generating Product Categories
 
 ## Analysis
-We identify the **top 7 product categories** contributing the most to total sales revenue.
+Let's identify the **top 7 product categories** contributing the most to total sales revenue.
 
+This is done using the following SQL query:
 [Top-7 categories](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/cf5539bb4d243dede52facd03ffebeaf298ee2f8/Analysis/5.%20Top_7_categories_revenue.sql)
 
 ## Results:
@@ -400,8 +405,9 @@ We identify the **top 7 product categories** contributing the most to total sale
 # 6. Average Order Value (AOV) by State
 
 ## Analysis
-We calculate the **average order value (AOV)** across different states in Brazil to understand regional purchasing behaviors.
+Let's calculate the **average order value (AOV)** across different states in Brazil to understand regional purchasing behaviors.
 
+This is done using the following SQL query:
 [Average order value](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/7ca9e301cdfddf328caacdefbdcb012a3b124fc3/Analysis/6.%20Average_order_value.sql)
 
 ## Results:
@@ -447,15 +453,16 @@ We calculate the **average order value (AOV)** across different states in Brazil
 # 7. Order Value Distribution
 
 ## Analysis
-We categorize orders based on their value:
+Let's categorize orders based on their value:
 - **Low**: Less than 100 BRL
 - **Medium**: Between 100 and 300 BRL
 - **High**: More than 300 BRL
 
+This is done using the following SQL query:
 [Order values categories](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/23f0b3c11311cea2fb2c627d7ccf7f8bd3f248ba/Analysis/7.%20Order_values_categories.sql)
 
 ## Results
-| Revenue Rank | Order Count | Percentage |
+| revenue_rank | order_count | percentage |
 |-------------|------------|------------|
 | Low         | 47,255     | 47.52%     |
 | Medium      | 41,868     | 42.10%     |
@@ -465,6 +472,205 @@ We categorize orders based on their value:
 1. **Customer Behavior Insight**: Nearly **90% of orders** fall into the **low** and **medium** price categories, indicating that most buyers prefer spending under **300 BRL**.
 2. **Sales Strategy**: Running promotional sales or bundle offers could help shift some medium buyers into the high-value category.
 3. **Experimentation**: Future analysis could track how discounts or marketing incentives impact the order value distribution.
+
+# 8. Average Delivery Time by State
+
+## Analysis
+Let's calculate the **average shipping time (in days) for each state** to assess regional differences in delivery speed.
+
+This is done using the following SQL query:
+[Average shipping time by state](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/4b329afc34291879b4940aa5ae85718d73fbd51c/Analysis/8.%20Average_shipping_time_per_state.sql)
+
+## Results
+| customer_state | shipping_time_days |
+|---------------|----------------------|
+| SP | 17 |
+| DF | 22 |
+| PR | 22 |
+| MG | 22 |
+| SC | 23 |
+| ES | 23 |
+| MS | 23 |
+| RJ | 24 |
+| GO | 25 |
+| TO | 26 |
+| RS | 26 |
+| BA | 27 |
+| SE | 28 |
+| MA | 28 |
+| PE | 28 |
+| PI | 28 |
+| RN | 29 |
+| CE | 29 |
+| MT | 29 |
+| PB | 30 |
+| AL | 30 |
+| PA | 34 |
+| RO | 37 |
+| AC | 38 |
+| AP | 43 |
+| RR | 43 |
+| AM | 43 |
+
+## Conclusion & Recommendations
+1. **Fastest Delivery**: São Paulo (SP) has the shortest shipping time (**17 days**) and also the highest number of buyers.
+2. **Delivery Gap**: The slowest states (AM, RR, AP) have more than **twice the delivery time** of SP.
+3. **Optimization Opportunity**: Investigating the causes of long delivery times and improving logistics could enhance customer satisfaction and potentially increase sales.
+4. **Customer Retention**: Reducing shipping times in slow-delivery states may attract more buyers who currently hesitate due to long waiting periods.
+
+# 9. Average Freight Cost by State
+
+## Analysis
+Let's calculate the **average freight cost** across Brazilian states to determine regional differences in shipping expenses.
+
+This is done using the following SQL query:
+[Average freight cost](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/54288767636681c106ec3139aa34c59f87b8897b/Analysis/9.%20Average_freight_value_top10cities.sql)
+
+## Results
+| Customer State | Average Freight Cost (BRL) |
+|---------------|---------------------------|
+| PB | 43.01 |
+| RR | 42.98 |
+| RO | 41.22 |
+| AC | 40.07 |
+| PI | 39.29 |
+| MA | 38.30 |
+| TO | 37.37 |
+
+## Conclusion & Observations
+1. **Freight Cost vs. Delivery Time**: Higher freight costs do not always correlate with longer delivery times. Some states with long shipping durations do not have the highest freight charges.
+2. **Regional Pricing Variance**: Freight pricing may be influenced by factors other than distance, such as logistics infrastructure, carrier availability, and state-specific regulations.
+3. **Further Analysis**: Investigating the relationship between freight costs, order values, and delivery time could provide insights into potential cost optimizations.
+
+# 10. Most Popular Payment Method
+
+## Analysis
+Let's identify the **most commonly used payment method** and check whether there are regional differences across Brazilian states.
+
+This is done using the following SQL query:
+[The most populer payment method](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/ace9cff0a19c16f9eb0754973aa85edfa2c3dc9b/Analysis/10.%20The_most_popular_payment_types.sql)
+
+## Results:
+### Overall Most Popular Payment Method:
+|payment_type|num_of_orders|
+|------------|-------------|
+|credit_card|76351|
+
+### Payment Method by State:
+|customer_state|most_popular_payment_type|
+|--------------|-------------------------|
+|AC|credit_card|
+|AL|credit_card|
+|AM|credit_card|
+|AP|credit_card|
+|BA|credit_card|
+|CE|credit_card|
+|DF|credit_card|
+|ES|credit_card|
+|GO|credit_card|
+|MA|credit_card|
+|MG|credit_card|
+|MS|credit_card|
+|MT|credit_card|
+|PA|credit_card|
+|PB|credit_card|
+|PE|credit_card|
+|PI|credit_card|
+|PR|credit_card|
+|RJ|credit_card|
+|RN|credit_card|
+|RO|credit_card|
+|RR|credit_card|
+|RS|credit_card|
+|SC|credit_card|
+|SE|credit_card|
+|SP|credit_card|
+|TO|credit_card|
+
+## Conclusion
+1. **Credit Cards Dominate**: The most popular payment method is **credit card payments**, with no variation across different states.
+2. **Implications for Business Strategy**: Given the widespread preference for credit cards, businesses may focus on optimizing credit card transactions, offering installment payment options, and ensuring seamless payment processing to enhance customer satisfaction.
+
+# 11. Installment Payment Distribution
+
+## Analysis
+Let's examine the **distribution of payments made in installments**, identifying how many transactions are completed in a single payment versus multiple installments.
+
+This is done using the following SQL query:
+[Installment payment distribution](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/14da1f9789ffc203a794027d6deaea5ba0bd026b/Analysis/11.%20Distribution_of_payment_installmenst.sql)
+
+## Results:
+|payment_installments|num_of_payments|
+|--------------------|---------------|
+|1|52546|
+|2|12413|
+|3|10461|
+|4|7098|
+|10|5328|
+|5|5239|
+|8|4268|
+|6|3920|
+|7|1626|
+|9|644|
+|12|133|
+|15|74|
+|18|27|
+|11|23|
+|24|18|
+|20|17|
+|13|16|
+|14|15|
+|17|8|
+|16|5|
+|21|3|
+|0|2|
+|22|1|
+|23|1|
+
+## Conclusion
+1. **One-Time Payments Are Preferred**: The majority of customers opt to pay in full rather than using installments. More than **50% of all payments** are completed in **a single payment**.  
+2. **Further Analysis Required**: It would be beneficial to investigate whether the **number of installment payments impacts the average order value (AOV)**. If customers who pay in installments tend to make larger purchases, businesses might consider promoting installment options to increase revenue.
+
+# 12. Correlation Between Installment Payments and AOV
+
+## Analysis
+Let's analyze whether there is a correlation between the **number of installment payments** and the **average order value (AOV)**.
+
+This is done using the following SQL query:
+[Installment Payments and AOV](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/3476ff2c80411f815218fc13d99489e31bc73585/Analysis/12.%20Correlation%20between%20payment%20installments%20and%20order%20value.sql) 
+
+## Results
+| payment_installments | avg_order_value | total_orders |
+|----------------------|----------------------|--------------|
+| 1                  | 112.04                | 52184        |
+| 2                  | 126.9                 | 12353        |
+| 3                  | 142.29                | 10392        |
+| 4                  | 163.85                | 7056         |
+| 5                  | 182.59                | 5209         |
+| 6                  | 209.69                | 3898         |
+| 7                  | 187.61                | 1620         |
+| 8                  | 307.22                | 4239         |
+| 9                  | 204.21                | 638          |
+| 10                 | 413.69                | 5292         |
+| 11                 | 125.6                 | 22           |
+| 12                 | 321.68                | 133          |
+| 13                 | 151.83                | 15           |
+| 14                 | 167.96                | 15           |
+| 15                 | 445.55                | 74           |
+| 16                 | 292.69                | 5            |
+| 17                 | 174.6                 | 8            |
+| 18                 | 486.48                | 27           |
+| 20                 | 615.8                 | 17           |
+| 21                 | 243.7                 | 3            |
+| 22                 | 228.71                | 1            |
+| 23                 | 236.48                | 1            |
+| 24                 | 610.05                | 18           |
+
+## Conclusion
+1. **Observed Correlation**: There is a noticeable increase in **AOV with more installments**, suggesting that customers who pay in multiple parts tend to make larger purchases.
+2. **Further Statistical Analysis Needed**: While the data suggests a correlation, a **statistical test** (e.g., Pearson correlation or regression analysis) should be performed to confirm the strength and significance of the relationship.
+3. **Business Opportunity**: Encouraging installment-based payments might lead to an increase in AOV, making it a potential strategy for boosting revenue.
+
 
 
 
