@@ -1,5 +1,3 @@
-# Are there any correlation between payment installments and order value?
-
 SELECT 
     oopd.payment_installments,
     ROUND(AVG(oopd.payment_value), 2) AS avg_order_value,
