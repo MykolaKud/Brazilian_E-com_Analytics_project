@@ -548,7 +548,7 @@ This is done using the following SQL query:
 Let's identify the **most commonly used payment method** and check whether there are regional differences across Brazilian states.
 
 This is done using the following SQL query:
-[The most populer payment method](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/ace9cff0a19c16f9eb0754973aa85edfa2c3dc9b/Analysis/10.%20The_most_popular_payment_types.sql)
+[The most popular payment method](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/ace9cff0a19c16f9eb0754973aa85edfa2c3dc9b/Analysis/10.%20The_most_popular_payment_types.sql)
 
 ## Results:
 ### Overall Most Popular Payment Method:
