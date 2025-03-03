@@ -402,7 +402,7 @@ We identify the **top 7 product categories** contributing the most to total sale
 ## Analysis
 We calculate the **average order value (AOV)** across different states in Brazil to understand regional purchasing behaviors.
 
-[Average_order_value](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/7ca9e301cdfddf328caacdefbdcb012a3b124fc3/Analysis/6.%20Average_order_value.sql)
+[Average order value](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/7ca9e301cdfddf328caacdefbdcb012a3b124fc3/Analysis/6.%20Average_order_value.sql)
 
 ## Results:
 |customer_state|average_order_value|
@@ -443,6 +443,28 @@ We calculate the **average order value (AOV)** across different states in Brazil
 ## Conclusion & Recommendations
 1. **AOV Growth Strategy**: Targeting SP, RJ, and MG with premium product offerings or upselling strategies could help increase the average order value.
 2. **Personalized Marketing**: Region-specific promotions or bundled deals might encourage higher spending per order.
+
+# 7. Order Value Distribution
+
+## Analysis
+We categorize orders based on their value:
+- **Low**: Less than 100 BRL
+- **Medium**: Between 100 and 300 BRL
+- **High**: More than 300 BRL
+
+[Order values categories](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/23f0b3c11311cea2fb2c627d7ccf7f8bd3f248ba/Analysis/7.%20Order_values_categories.sql)
+
+## Results
+| Revenue Rank | Order Count | Percentage |
+|-------------|------------|------------|
+| Low         | 47,255     | 47.52%     |
+| Medium      | 41,868     | 42.10%     |
+| High        | 10,317     | 10.38%     |
+
+## Conclusion & Recommendations
+1. **Customer Behavior Insight**: Nearly **90% of orders** fall into the **low** and **medium** price categories, indicating that most buyers prefer spending under **300 BRL**.
+2. **Sales Strategy**: Running promotional sales or bundle offers could help shift some medium buyers into the high-value category.
+3. **Experimentation**: Future analysis could track how discounts or marketing incentives impact the order value distribution.
 
 
 
