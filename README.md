@@ -267,7 +267,7 @@ Let's determine the **top 7 states** and **top 10 cities** with the highest numb
 This is done using the following SQL queries:
 [Top-7 States and Top-10 cities](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/cf5f63145f276cead345312e1aacb08f02be0807/Analysis/1.%20Num_of_customers.sql)
 
-## Results:
+## Results
 
 States:
 |state|num_of_unique_customers|percent_from_total|
@@ -312,7 +312,7 @@ Let's analyze how orders are distributed across product categories, including th
 This is done using the following SQL query:
 [Sum per category](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/a7909eb368400417bd9abbea529d1a73aef1ab8d/Analysis/2.%20Sum_per_category.sql)
 
-## Results:
+## Results
 
 |product_category|sum_of_orders|percent_from_total|
 |----------------|-------------|------------------|
@@ -355,8 +355,7 @@ Let's determine the **month with the highest number of orders** for each year, e
 This is done using the following SQL query:
 [Highest month each year](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/61ed94dc78b66a49c1b68101700fb6d2cab2a92c/Analysis/3.%20Highest_month_each_year.sql)
 
-## Results:
-
+## Results
 |order_month|order_year|num_of_orders|
 |-----------|----------|-------------|
 |10|2016|300|
@@ -381,7 +380,7 @@ Let's calculate the **total revenue, number of orders, and average order value**
 This is done using the following SQL query:
 [Total revenue, order count, average value](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/1b547a1d3802195faec89e6afd7f3e2214a2b560/Analysis/4.%20Total_revenue.sql)
 
-## Results:
+## Results
 |reporting_year|annual_revenue|total_orders_per_year|average_order_value|
 |--------------|--------------|---------------------|-------------------|
 |2016|54071.35|320|168.97|
@@ -407,7 +406,7 @@ Let's identify the **top 7 product categories** contributing the most to total s
 This is done using the following SQL query:
 [Top-7 categories](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/cf5539bb4d243dede52facd03ffebeaf298ee2f8/Analysis/5.%20Top_7_categories_revenue.sql)
 
-## Results:
+## Results
 |product_category_name|revenue|percent_from_total|
 |---------------------|-------|------------------|
 |cama_mesa_banho|1711258.08|10.69|
@@ -442,7 +441,7 @@ Let's calculate the **average order value (AOV)** across different states in Bra
 This is done using the following SQL query:
 [Average order value](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/7ca9e301cdfddf328caacdefbdcb012a3b124fc3/Analysis/6.%20Average_order_value.sql)
 
-## Results:
+## Results
 |customer_state|average_order_value|
 |--------------|-------------------|
 |AC|234.29|
@@ -602,7 +601,7 @@ Let's identify the **most commonly used payment method** and check whether there
 This is done using the following SQL query:
 [The most popular payment method](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/ace9cff0a19c16f9eb0754973aa85edfa2c3dc9b/Analysis/10.%20The_most_popular_payment_types.sql)
 
-## Results:
+## Results
 *Overall Most Popular Payment Method:*
 |payment_type|num_of_orders|
 |------------|-------------|
@@ -651,7 +650,7 @@ Let's examine the **distribution of payments made in installments**, identifying
 This is done using the following SQL query:
 [Installment payment distribution](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/14da1f9789ffc203a794027d6deaea5ba0bd026b/Analysis/11.%20Distribution_of_payment_installmenst.sql)
 
-## Results:
+## Results
 |payment_installments|num_of_payments|
 |--------------------|---------------|
 |1|52546|
