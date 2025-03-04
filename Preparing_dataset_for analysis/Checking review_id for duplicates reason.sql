@@ -1,5 +1,4 @@
-#Finding all the different values in duplicate review_id by checking all columns
-   
+#Finding all the different values in duplicate review_id by checking all columns   
 SELECT review_id
 FROM olist_order_reviews_dataset
 GROUP BY review_id
