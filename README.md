@@ -204,6 +204,8 @@ This is done using the following SQL query:
 |21b8b46679ea6482cbf911d960490048|
 |ea9184ad433a404df1d72fa0a8764232|
 
+Checking first 4 id's:
+
 |order_id|payment_sequential|payment_type|payment_installments|payment_value|
 |--------|------------------|------------|--------------------|-------------|
 |3689194c14ad4e2e7361ebd1df0e77b0|2|voucher|1|57.53|
@@ -222,6 +224,33 @@ Then analyze why `review_id` is duplicated. The results indicate that the same `
 
 This is done using the following SQL query:
 [Checking review_id for duplicates reason.sql](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/3927b8e62abab4786a08f1ce5c3f79890d1c350a/Preparing_dataset_for%20analysis/Checking%20review_id%20for%20duplicates%20reason.sql)
+
+## Results:
+
+*different values in duplicate review_id*
+|review_id|
+|---------|
+|00130cbe1f9d422698c812ed8ded1919|
+|03a6a25db577d0689440933055111897|
+|0467560f511c516ddaa54a60edb0c291|
+|047fd109ced39e02296f6aeb74f6a6f1|
+|0501aab2f381486c36bf0f071442c0c2|
+|0655af56f10bc3ef8e3810610828f294|
+|06e327fb381850fdd69fba40ad61b2f2|
+|08528f70f579f0c830189efc523d2182|
+|08a86da22498172adb6cefaa99fdfaf7|
+|090aa2980b0aea78cd1ae73447d7d55b|
+|...|
+
+*Checking separate review_id*
+|review_id|order_id|review_score|review_comment_title|review_comment_message|review_creation_date|review_answer_timestamp|
+|---------|--------|------------|--------------------|----------------------|--------------------|-----------------------|
+|00130cbe1f9d422698c812ed8ded1919|04a28263e085d399c97ae49e0b477efa|1||O cartucho "original HP" 60XL não é reconhecido pela impressora, consequentemente não funcionou. Além de ter chegado com atraso de mais de 15 dias do previsto. Preciso que seja trocado. |2018-03-07 00:00:00|2018-03-20 18:08:23|
+|00130cbe1f9d422698c812ed8ded1919|dfcdfc43867d1c1381bfaf62d6b9c195|1||O cartucho "original HP" 60XL não é reconhecido pela impressora, consequentemente não funcionou. Além de ter chegado com atraso de mais de 15 dias do previsto. Preciso que seja trocado. |2018-03-07 00:00:00|2018-03-20 18:08:23|
+
+*finding all the different values in duplicate review_id*
+|review_id|
+|---------|
 
 ## Conclusion
 - A single order can have multiple payments.
