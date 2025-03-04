@@ -223,7 +223,7 @@ After selecting a few examples, we confirm that multiple payments can be linked 
 Then analyze why `review_id` is duplicated. The results indicate that the same `review_id` can be associated with different `order_id` values.
 
 This is done using the following SQL query:
-[Checking review_id for duplicates reason.sql](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/3927b8e62abab4786a08f1ce5c3f79890d1c350a/Preparing_dataset_for%20analysis/Checking%20review_id%20for%20duplicates%20reason.sql)
+[Checking review_id for duplicates reason.sql](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/56b52abae2ea4cce0a9765deb2cbad7787622f01/Preparing_dataset_for%20analysis/Checking%20review_id%20for%20duplicates%20reason.sql)
 
 ## Results:
 
