@@ -37,7 +37,7 @@ Initially, let's check the dataset for missing (NULL) values.
 This is done using the following SQL query:
 [Checking for null-values](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/9101b7ad5656760146955be6b906459bf2e9aa1d/Preparing_dataset_for%20analysis/Checking%20for%20null-values.sql)
 
-## Results:
+## Results
 |dataset|metric|value|
 |-------|------|-----|
 |product_category_name_translation|Total_rows|71|
@@ -195,7 +195,6 @@ This is done using the following SQL queries:
 [Checking order_id for duplicates reason](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/90f16a949662b5226ddc5d796e0aa59017ba4c01/Preparing_dataset_for%20analysis/Checking%20order_id%20for%20duplicates%20reason.sql)
 
 ## Results
-
 *Selecting duplicate order_id's in payments:*
 |order_id|
 |--------|
@@ -227,8 +226,7 @@ Then analyze why `review_id` is duplicated. The results indicate that the same `
 This is done using the following SQL query:
 [Checking review_id for duplicates reason.sql](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/56b52abae2ea4cce0a9765deb2cbad7787622f01/Preparing_dataset_for%20analysis/Checking%20review_id%20for%20duplicates%20reason.sql)
 
-## Results:
-
+## Results
 *Different values in duplicate review_id*
 |review_id|
 |---------|
@@ -605,12 +603,12 @@ This is done using the following SQL query:
 [The most popular payment method](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/ace9cff0a19c16f9eb0754973aa85edfa2c3dc9b/Analysis/10.%20The_most_popular_payment_types.sql)
 
 ## Results:
-### Overall Most Popular Payment Method:
+*Overall Most Popular Payment Method:*
 |payment_type|num_of_orders|
 |------------|-------------|
 |credit_card|76351|
 
-### Payment Method by State:
+*Payment Method by State:*
 |customer_state|most_popular_payment_type|
 |--------------|-------------------------|
 |AC|credit_card|
