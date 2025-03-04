@@ -227,7 +227,7 @@ This is done using the following SQL query:
 
 ## Results:
 
-*different values in duplicate review_id*
+*Different values in duplicate review_id*
 |review_id|
 |---------|
 |00130cbe1f9d422698c812ed8ded1919|
@@ -248,7 +248,7 @@ This is done using the following SQL query:
 |00130cbe1f9d422698c812ed8ded1919|04a28263e085d399c97ae49e0b477efa|1||O cartucho "original HP" 60XL não é reconhecido pela impressora, consequentemente não funcionou. Além de ter chegado com atraso de mais de 15 dias do previsto. Preciso que seja trocado. |2018-03-07 00:00:00|2018-03-20 18:08:23|
 |00130cbe1f9d422698c812ed8ded1919|dfcdfc43867d1c1381bfaf62d6b9c195|1||O cartucho "original HP" 60XL não é reconhecido pela impressora, consequentemente não funcionou. Além de ter chegado com atraso de mais de 15 dias do previsto. Preciso que seja trocado. |2018-03-07 00:00:00|2018-03-20 18:08:23|
 
-*finding all the different values in duplicate review_id*
+*Finding all the different values in duplicate review_id*
 |review_id|
 |---------|
 
