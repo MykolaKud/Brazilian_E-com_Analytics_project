@@ -558,18 +558,38 @@ This is done using the following SQL query:
 Let's calculate the **average freight cost** across Brazilian states to determine regional differences in shipping expenses.
 
 This is done using the following SQL query:
-[Average freight cost](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/54288767636681c106ec3139aa34c59f87b8897b/Analysis/9.%20Average_freight_value_top10cities.sql)
+[Average freight cost](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/1c46d6c855fdfe378c9bdad92250b44c73139e81/Analysis/9.%20Average_freight_value_top10cities.sql)
 
 ## Results
-| Customer State | Average Freight Cost (BRL) |
-|---------------|---------------------------|
-| PB | 43.01 |
-| RR | 42.98 |
-| RO | 41.22 |
-| AC | 40.07 |
-| PI | 39.29 |
-| MA | 38.30 |
-| TO | 37.37 |
+|customer_state|average_freight_value|
+|--------------|---------------------|
+|PB|43.01|
+|RR|42.98|
+|RO|41.22|
+|AC|40.07|
+|PI|39.29|
+|MA|38.3|
+|TO|37.37|
+|SE|36.75|
+|AL|36.25|
+|PA|35.87|
+|RN|35.86|
+|AP|34.43|
+|AM|33.21|
+|PE|33.06|
+|CE|32.91|
+|MT|28.27|
+|BA|26.49|
+|MS|23.49|
+|GO|22.88|
+|ES|22.19|
+|RS|21.79|
+|SC|21.56|
+|RJ|21.09|
+|DF|21.09|
+|MG|20.72|
+|PR|20.61|
+|SP|15.18|
 
 ## Conclusion & Observations
 1. **Freight Cost vs. Delivery Time**: Higher freight costs do not always correlate with longer delivery times. Some states with long shipping durations do not have the highest freight charges.
