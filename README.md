@@ -191,10 +191,12 @@ The analysis revealed duplicates in two columns.
 ### Investigating Duplicate `order_id` in `olist_order_payments_dataset`
 Since `order_id` is unique in the orders dataset, we can assume that a single order may have multiple payments. To verify this, let's extract all duplicate values and check some of them.
 
-This is done using the following SQL query:
-[Checking order_id for duplicates reason](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/3927b8e62abab4786a08f1ce5c3f79890d1c350a/Preparing_dataset_for%20analysis/Checking%20order_id%20for%20duplicates%20reason.sql)
+This is done using the following SQL queries:
+[Checking order_id for duplicates reason](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/90f16a949662b5226ddc5d796e0aa59017ba4c01/Preparing_dataset_for%20analysis/Checking%20order_id%20for%20duplicates%20reason.sql)
 
-## Result
+## Results
+
+*Selecting duplicate order_id's in payments:*
 |order_id|
 |--------|
 |5cfd514482e22bc992e7693f0e3e8df7|
@@ -203,9 +205,9 @@ This is done using the following SQL query:
 |723e462ce1ee50e024887c0b403130f3|
 |21b8b46679ea6482cbf911d960490048|
 |ea9184ad433a404df1d72fa0a8764232|
+|...|
 
-Checking first 4 id's:
-
+*Checking first 4 id's:*
 |order_id|payment_sequential|payment_type|payment_installments|payment_value|
 |--------|------------------|------------|--------------------|-------------|
 |3689194c14ad4e2e7361ebd1df0e77b0|2|voucher|1|57.53|
@@ -264,8 +266,8 @@ So, we can move on in the analysis of the datasets.
 ## Analysis
 Let's determine the **top 7 states** and **top 10 cities** with the highest number of unique buyers, along with their percentage of the total customer base.
 
-This is done using the following SQL query:
-[Top-7 States and Top-10 cities](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/d30bc48c3afa77ab90997d03c6b16f1550930dee/Analysis/1.%20Num_of_customers.sql)
+This is done using the following SQL queries:
+[Top-7 States and Top-10 cities](https://github.com/MykolaKud/Brazilian_E-com_Analytics_project/blob/cf5f63145f276cead345312e1aacb08f02be0807/Analysis/1.%20Num_of_customers.sql)
 
 ## Results:
 
