@@ -15,6 +15,9 @@ The project explores **12 key business questions** to uncover insights from the 
 ## Tools Used
 - **DBeaver** (for database connection and SQL queries)
 
+## Timeline
+Developed from February 2025 to March 2025.
+
 ## Results & Recommendations
 - Each analysis provides meaningful insights into the dataset.
 - Business recommendations are based on observed trends and key performance indicators.
